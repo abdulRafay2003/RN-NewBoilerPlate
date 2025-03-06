@@ -185,7 +185,7 @@ export const RegisterScreen: React.FC<RegisterScreenProps> = ({}) => {
             isBtn
             onPress={() => handleSubmit()}
             onBottomTextPress={() =>
-              NavigationService.navigate(RouteNames.AuthRoutes.SignUpScreen)
+              NavigationService.navigate(RouteNames.AuthRoutes.LoginScreen)
             }>
             <CustomInput
               heading={t('first_name')}

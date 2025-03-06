@@ -1,11 +1,16 @@
 const {getDefaultConfig, mergeConfig} = require('@react-native/metro-config');
+const {
+  wrapWithReanimatedMetroConfig,
+} = require('react-native-reanimated/metro-config');
 
-/**
- * Metro configuration
- * https://reactnative.dev/docs/metro
- *
- * @type {import('@react-native/metro-config').MetroConfig}
- */
-const config = {};
+// Get the default Metro configuration
+const defaultConfig = getDefaultConfig(__dirname);
 
-module.exports = mergeConfig(getDefaultConfig(__dirname), config);
+// Your custom Metro configuration
+const customConfig = {};
+
+// Merge the default config with custom configurations
+const mergedConfig = mergeConfig(defaultConfig, customConfig);
+
+// Wrap with Reanimated's Metro config
+module.exports = wrapWithReanimatedMetroConfig(mergedConfig);

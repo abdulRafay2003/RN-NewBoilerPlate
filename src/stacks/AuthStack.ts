@@ -4,10 +4,6 @@ import {
   LoginScreen,
   OnBoarding,
   OtpScreen,
-  SelectLanguage,
-  SignupScreen,
-  GoogleSignUp,
-  VerifyUser,
   RegisterScreen,
 } from '../screens';
 import {
@@ -46,22 +42,11 @@ export const AuthStack: AuthScreenStacksTypes = [
   //   component: SelectLanguage,
   //   key: RouteNames.AuthRoutes.SelectLanguage,
   // },
-  {
-    name: RouteNames.AuthRoutes.OnBoardingScreen,
-    component: OnBoarding,
-    key: RouteNames.AuthRoutes.OnBoardingScreen,
-  },
-  {
-    name: RouteNames.AuthRoutes.SignUpScreen,
-    component: SignupScreen,
-    key: RouteNames.AuthRoutes.SignUpScreen,
-  },
-  {
-    name: RouteNames.AuthRoutes.GoogleSignUp,
-    component: GoogleSignUp,
-    key: RouteNames.AuthRoutes.GoogleSignUp,
-  },
-
+  // {
+  //   name: RouteNames.AuthRoutes.OnBoardingScreen,
+  //   component: OnBoarding,
+  //   key: RouteNames.AuthRoutes.OnBoardingScreen,
+  // },
   {
     name: RouteNames.AuthRoutes.LoginScreen,
     component: LoginScreen,
@@ -71,11 +56,6 @@ export const AuthStack: AuthScreenStacksTypes = [
     name: RouteNames.AuthRoutes.RegisterScreen,
     component: RegisterScreen,
     key: RouteNames.AuthRoutes.RegisterScreen,
-  },
-  {
-    name: RouteNames.AuthRoutes.VerifyUser,
-    component: VerifyUser,
-    key: RouteNames.AuthRoutes.VerifyUser,
   },
   {
     name: RouteNames.AuthRoutes.ForgotPasswordScreen,

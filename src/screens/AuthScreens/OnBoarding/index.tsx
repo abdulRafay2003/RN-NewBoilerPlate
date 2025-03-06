@@ -25,7 +25,7 @@ import Onboarding from 'react-native-onboarding-swiper';
 import {t} from 'i18next';
 
 const handleOnSkipAndDone = () => {
-  NavigationService.navigate(RouteNames.AuthRoutes.SignUpScreen);
+  NavigationService.navigate(RouteNames.AuthRoutes.LoginScreen);
 };
 
 const Square: React.FC<{isLight: any; selected: any}> = ({

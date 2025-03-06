@@ -46,10 +46,6 @@ export const ForgotPassword: React.FC<ForgotPasswordProps> = ({}) => {
           email: value?.email,
         };
         forget(value);
-        // NavigationService.navigate(RouteNames.AuthRoutes.ChangePasswrod, {
-        //   email: value?.email,
-        // });
-        // console.log('------data', value);
       }}
       validationSchema={Schema.ForgotPasswordSchema}>
       {({

@@ -102,22 +102,14 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({}) => {
         handleSubmit,
       }) => (
         <>
-          <BackHeader
-            customeStyle={{
-              paddingTop: Metrix.VerticalSize(60),
-              paddingHorizontal: Metrix.HorizontalSize(20),
-            }}
-          />
-
           <AuthHeader
             heading={t('Lets_sign_in')}
             title={t('login')}
             customStyles={{marginTop: Metrix.VerticalSize(20)}}
             isBtn
-            // isSecondaryBtn
             onPress={() => handleSubmit()}
             onBottomTextPress={() =>
-              NavigationService.navigate(RouteNames.AuthRoutes.SignUpScreen)
+              NavigationService.navigate(RouteNames.AuthRoutes.RegisterScreen)
             }>
             <CustomInput
               heading={t('email')}

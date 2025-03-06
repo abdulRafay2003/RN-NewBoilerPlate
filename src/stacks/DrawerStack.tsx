@@ -1,62 +1,27 @@
 import {
   Image,
   StyleSheet,
-  SafeAreaView,
   TouchableOpacity,
   View,
   ImageProps,
-  Linking,
   Alert,
 } from 'react-native';
 import React, {useState} from 'react';
-import {
-  createDrawerNavigator,
-  DrawerItem,
-  DrawerContentScrollView,
-  DrawerItemList,
-  DrawerNavigationProp,
-} from '@react-navigation/drawer';
-import {
-  useTheme,
-  Avatar,
-  Title,
-  Caption,
-  Paragraph,
-  Text,
-  TouchableRipple,
-  Switch,
-} from 'react-native-paper';
+import {createDrawerNavigator, DrawerItem} from '@react-navigation/drawer';
 import {Images, Metrix, NavigationService, RouteNames, Utills} from '../config';
 import {TabStack} from './TabStack';
-import {CustomText, Loader} from '../components';
-import {useNavigation} from '@react-navigation/native';
+import {Loader} from '../components';
 import {useDispatch, useSelector} from 'react-redux';
 import {AuthActions, HomeActions} from '../redux/actions';
 import utills from '../config/utills';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {RootState} from '../redux/reducers';
-import {HomeAPIS} from '../services/home';
 
 const Drawer = createDrawerNavigator();
 
 const DrawerContent: React.FC = () => {
-  const userData = useSelector((state: RootState) => state.home.userDetails);
+  const dispatch = useDispatch();
   const [loading, setLoading] = useState(false);
 
-  const deleteAccount = () => {
-    // setLoading(true);
-    // HomeAPIS.deleteuser()
-    //   .then(res => {
-    //     // console.log('Res for Live sessions', res?.data?.data);
-    //     setLoading(false);
-    //   })
-    //   .catch(error => {
-    //     console.log('Err', error);
-    //     setLoading(false);
-    //   });
-  };
-
-  const dispatch = useDispatch();
   const DrawerElement = [
     {
       label: 'My Profile',
@@ -65,13 +30,7 @@ const DrawerContent: React.FC = () => {
         NavigationService.navigate(RouteNames.HomeRoutes.EditProfileScreen);
       },
     },
-    // {
-    //   label: 'Change Password',
-    //   icon: Images.ChangePassword,
-    //   onPress: () => {
-    //     NavigationService.navigate(RouteNames.HomeRoutes.ChangePassword);
-    //   },
-    // },
+
     {
       label: 'About us',
       icon: Images.About,
@@ -131,9 +90,6 @@ const DrawerContent: React.FC = () => {
           },
           {
             text: 'Yes',
-            onPress: () => {
-              deleteAccount();
-            },
           },
         ]);
       },
