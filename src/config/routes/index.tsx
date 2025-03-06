@@ -14,7 +14,6 @@ export const RouteNames = {
     NavigationScreen: 'NavigationScreen',
     EditProfileScreen: 'EditProfileScreen',
     ChangePassword: 'ChangePasswrod',
-    QuestionsAndAnswers: 'QuestionsAndAnswers',
     WebView: 'WebView',
   },
 };

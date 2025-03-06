@@ -1,13 +1,7 @@
 import {Image, ImageProps, StyleSheet} from 'react-native';
 import React, {useEffect} from 'react';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
-import {
-  Activity,
-  Courses,
-  HomeScreen,
-  QuestionsAndAnswers,
-  Search,
-} from '../screens';
+import {Courses, HomeScreen, Search} from '../screens';
 import {Colors, Images, Metrix, Utills} from '../config';
 import {MD3DarkTheme, MD3LightTheme, PaperProvider} from 'react-native-paper';
 import changeNavigationBarColor from 'react-native-navigation-bar-color';

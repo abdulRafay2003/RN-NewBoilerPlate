@@ -23,7 +23,6 @@ import {
   PrimaryButton,
   RoundImageContainer,
 } from '../../../components';
-import {VerifyUser} from '../../AuthScreens/VerifyUser';
 import {
   Colors,
   Images,
@@ -318,7 +317,7 @@ const styles = StyleSheet.create({
   drawerSection: {
     paddingTop: 25,
     borderTopWidth: 1,
-    borderColor: Colors.InActiveTabBar,
+    borderColor: Utills.selectedThemeColors().InActiveTabBar,
     marginTop: 25,
   },
   preference: {

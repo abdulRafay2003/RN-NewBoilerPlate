@@ -80,15 +80,8 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({}) => {
       }}
       onSubmit={values => {
         console.log('Vslues', values);
-
-        loginUser(values);
-        // dispatch(AuthActions.loginSuccess(true));
-        // dispatch(
-        //   AuthActions.login({
-        //     email: email?.toLocaleLowerCase(),
-        //     ...restValues,
-        //   }),
-        // );
+        dispatch(AuthActions.loginSuccess(true));
+        // loginUser(values);
       }}
       // validationSchema={Schema.LoginSchema}
     >

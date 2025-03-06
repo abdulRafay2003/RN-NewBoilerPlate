@@ -12,9 +12,7 @@ import {ChangePassword} from './HomeScreens/ChangePassword';
 import {NavigationScreen} from './HomeScreens/NavigationScreen';
 import {EditProfile} from './HomeScreens/EditProfile';
 import {Courses} from './HomeScreens/Courses';
-import {Activity} from './HomeScreens/Activity';
 import {Search} from './HomeScreens/Search';
-import {QuestionsAndAnswers} from './HomeScreens/QuestionsAndAnswers';
 import {WebView} from './HomeScreens/WebView';
 
 export {
@@ -31,9 +29,7 @@ export {
   EditProfile,
   HomeScreen,
   Courses,
-  Activity,
   Search,
-  QuestionsAndAnswers,
   WebView,
   ChangePassword,
 };

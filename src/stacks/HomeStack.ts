@@ -3,7 +3,6 @@ import {
   ChangePassword,
   EditProfile,
   NavigationScreen,
-  QuestionsAndAnswers,
   WebView,
 } from '../screens';
 import {
@@ -43,11 +42,6 @@ export const HomeStack: HomeScreenStacksTypes = [
     name: RouteNames.HomeRoutes.EditProfileScreen,
     component: EditProfile,
     key: RouteNames.HomeRoutes.EditProfileScreen,
-  },
-  {
-    name: RouteNames.HomeRoutes.QuestionsAndAnswers,
-    component: QuestionsAndAnswers,
-    key: RouteNames.HomeRoutes.QuestionsAndAnswers,
   },
   {
     name: RouteNames.HomeRoutes.WebView,
