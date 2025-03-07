@@ -126,15 +126,15 @@ export const CustomInput: FC<CustomInputProps> = ({
 
 const styles = StyleSheet.create({
   textContainer: {
-    borderWidth: 2,
-    borderRadius: Metrix.VerticalSize(50),
+    borderWidth: 1.5,
+    borderRadius: Metrix.VerticalSize(8),
     height: Metrix.VerticalSize(45),
     width: '100%',
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginVertical: Metrix.VerticalSize(10),
     backgroundColor: Utills.selectedThemeColors().TextInputBaseColor,
-    borderColor: Utills.selectedThemeColors().TextInputBorderColor,
+    borderColor: Utills.selectedThemeColors().Secondary,
     alignItems: 'center',
     overflow: 'hidden',
   },
@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: Utills.selectedThemeColors().TextInputBaseColor,
-    // borderWidth:1,
-    borderRadius: Metrix.VerticalSize(50),
+    // borderWidth: 1,
+    borderRadius: Metrix.VerticalSize(10),
   },
 });

@@ -10,8 +10,8 @@ const DefaultColors = {
   BaseOpacity: (opacity = '0.5') => `rgba(255, 255, 255, ${opacity})`,
   PrimaryColorOpacity: (opacity = '0.5') => `rgba(218, 50, 50,${opacity})`,
   WhiteTwentyOpacity: 'rgba(255, 255, 255, 0.2)',
-  Primary: '#273572',
-  Secondary: '#1B2043',
+  Primary: '#b5be32',
+  Secondary: '#263473',
   // Text Colors
   SecondaryTextColor: '#757575',
   TertiaryTextColor: '#FCB706',

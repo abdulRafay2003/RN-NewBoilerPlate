@@ -29,7 +29,7 @@ export const PrimaryButton: FC<PrimaryButtonProps> = ({
   disabled,
   width = '100%',
   color = Utills.selectedThemeColors().Primary,
-  textColor = '#ffffff',
+  textColor = Utills.selectedThemeColors().Secondary,
   customStyles,
   ...rest
 }) => {
@@ -41,7 +41,9 @@ export const PrimaryButton: FC<PrimaryButtonProps> = ({
       style={[
         styles.buttonContainer,
         {
-          backgroundColor: disabled ? Utills.selectedThemeColors().TextInputPlaceholserColor : color,
+          backgroundColor: disabled
+            ? Utills.selectedThemeColors().TextInputPlaceholserColor
+            : color,
           width: width,
         },
         customStyles,
@@ -52,7 +54,11 @@ export const PrimaryButton: FC<PrimaryButtonProps> = ({
         <ActivityIndicator color={textColor} />
       ) : (
         <CustomText.LargeSemiBoldText
-          customStyle={{color: textColor, fontSize: FontType.FontMedium}}>
+          customStyle={{
+            color: textColor,
+            fontSize: FontType.FontMedium,
+            fontWeight: '700',
+          }}>
           {title}
         </CustomText.LargeSemiBoldText>
         // <Text style={{ color: textColor }}>{title}</Text>
@@ -67,7 +73,7 @@ const styles = StyleSheet.create({
     height: Metrix.VerticalSize(45),
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: Metrix.VerticalSize(50),
+    borderRadius: Metrix.VerticalSize(8),
     marginVertical: Metrix.VerticalSize(10),
     // backgroundColor: selectedTheme(Utills.currentThemeColors()).Primary,
     // backgroundColor: Utills.selectedThemeColors().Primary,
